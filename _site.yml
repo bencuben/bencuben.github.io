@@ -1,0 +1,17 @@
+name: my-website
+output_dir: .
+navbar:
+  title: Opciones
+  left:
+  - text: "Sobre mi"
+    href: sobre.html
+  - text: "Trabajos"
+    href: trabajos.html
+  - text: "Densidades"
+    href: densidades.html
+output:
+  html_document:
+    theme: spacelab
+    highlight: textmate
+    
+

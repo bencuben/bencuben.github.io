@@ -1,0 +1,41 @@
+---
+title: "Como crear una densidad con R"
+---
+
+En este apartado veremos como crear una grafica de densidad de una variable continua, en el software R, para esto tomaremos como ejemplo una variable normal; recuerde, si  $x\sim n(\mu,\sigma^2)$ luego su f.d.p esta dada por:
+$$f.d.p(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}; -\propto<x<\propto $$ Esto no tenemos que programarlo, en r existen varias manera de poder usar su f.d.p, como la función `pnorm()` para calcular una probabilidad.
+
+#graficando la curva
+
+Para esto usaremos la función `curve()` de la siguiente manera que recibe la funcion que queremos dibujar y luego el dominio en que queremos hacerlo.
+
+```{r}
+#distribución normal con media = 0 y desviacion estandar = 1
+curve(dnorm(x),from=-5,to =5)
+
+```
+
+Podemos refinar un poco el grafico de esta manera:
+
+```{r}
+#distribución normal con media m y desviacion estandar sd(se pueden reemplazar los valores)
+
+m<- 5
+sd <- 2
+# el dominio esta a 4 desviaciones de la media ya que casi todas las observaciones estaran allí
+
+curve(dnorm(x,mean= m , sd = sd),from = m-4*sd, to= m+4*sd,
+      main="Distribución normal")
+```
+
+por ultimo cambiemos las etiquetas de los ejes y demosle un nombre apropiado
+
+```{r}
+m <- 10
+sd <- 5
+
+curve(dnorm(x,mean= m , sd = sd),from = m-4*sd, to= m+4*sd,
+      main=paste("Distribucion normal(",m,",",sd,")"  ),
+      ylab="Probabilidad",col="red",lwd=3 )
+```
+
