@@ -1,63 +1,11 @@
 ---
-title: "Brahian Cano Urrego"
+title: Un poco sobre mi
 ---
 
-Amo las necias. por ejemplo
+Mi nombre es Brahian Cano Urrego, soy Estudiante de Estadistica de la universidad Nacional de colombia, estoy cursando el octavo semestre de mi carrera.
+Soy Apasionado por los deportes de fuerza, en especial el powerlifting; otra de mis pasiones son las aventuras, disfruto mucho el poder experimentar lo que la naturaleza tiene para darnos.
 
-```{r,fig.width = 13, fig.height = 10, echo = FALSE, eval = TRUE, fig.align='center'}
-# knitr::include_graphics("media/phillips_portrait_red.jpg")
-knitr::include_graphics("IMG.jpg")
-```
 
-```{r}
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+```{r, out.width = "400px",  fig.align='center',echo=F}
 
-library(shiny)
-
-# Define UI for application that draws a histogram
-ui <- fluidPage(
-   
-   # Application title
-   titlePanel("Old Faithful Geyser Data"),
-   
-   # Sidebar with a slider input for number of bins 
-   sidebarLayout(
-      sidebarPanel(
-         sliderInput("bins",
-                     "Number of bins:",
-                     min = 1,
-                     max = 50,
-                     value = 30)
-      ),
-      
-      # Show a plot of the generated distribution
-      mainPanel(
-         plotOutput("distPlot")
-      )
-   )
-)
-
-# Define server logic required to draw a histogram
-server <- function(input, output) {
-   
-   output$distPlot <- renderPlot({
-      # generate bins based on input$bins from ui.R
-      x    <- faithful[, 2] 
-      bins <- seq(min(x), max(x), length.out = input$bins + 1)
-      
-      # draw the histogram with the specified number of bins
-      hist(x, breaks = bins, col = 'darkgray', border = 'white')
-   })
-}
-
-# Run the application 
-shinyApp(ui = ui, server = server)
-```
-
+knitr::include_graphics("IMG2.jpg")

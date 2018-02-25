@@ -7,6 +7,9 @@ Aqui colgare un par de trabajos realizados en el transcurso de mi carrera
 
 #Aplicación para la distribucion beta
 
+
+
+
 ```{r,echo=F,warning=F,message=F}
 library(gamlss)
 library(shiny)

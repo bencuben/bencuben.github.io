@@ -1,10 +1,10 @@
-name: my-website
+name: Mi sitio
 output_dir: .
 navbar:
-  title: Opciones
+  title: "Opciones"
   left:
   - text: "Sobre mi"
-    href: sobre.html
+    href: index.html
   - text: "Trabajos"
     href: trabajos.html
   - text: "Densidades"

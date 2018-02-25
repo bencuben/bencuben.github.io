@@ -11,7 +11,7 @@
 
 
 
-<title>Brahian Cano Urrego</title>
+<title>Un poco sobre mi</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -178,7 +178,7 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="sobre.html">Sobre mi</a>
+  <a href="index.html">Sobre mi</a>
 </li>
 <li>
   <a href="trabajos.html">Trabajos</a>
@@ -198,63 +198,13 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Brahian Cano Urrego</h1>
+<h1 class="title toc-ignore">Un poco sobre mi</h1>
 
 </div>
 
 
-<p>Amo las necias. por ejemplo</p>
-<p><img src="IMG.jpg" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>#
-# This is a Shiny web application. You can run the application by clicking
-# the &#39;Run App&#39; button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
-library(shiny)
-
-# Define UI for application that draws a histogram
-ui &lt;- fluidPage(
-   
-   # Application title
-   titlePanel(&quot;Old Faithful Geyser Data&quot;),
-   
-   # Sidebar with a slider input for number of bins 
-   sidebarLayout(
-      sidebarPanel(
-         sliderInput(&quot;bins&quot;,
-                     &quot;Number of bins:&quot;,
-                     min = 1,
-                     max = 50,
-                     value = 30)
-      ),
-      
-      # Show a plot of the generated distribution
-      mainPanel(
-         plotOutput(&quot;distPlot&quot;)
-      )
-   )
-)
-
-# Define server logic required to draw a histogram
-server &lt;- function(input, output) {
-   
-   output$distPlot &lt;- renderPlot({
-      # generate bins based on input$bins from ui.R
-      x    &lt;- faithful[, 2] 
-      bins &lt;- seq(min(x), max(x), length.out = input$bins + 1)
-      
-      # draw the histogram with the specified number of bins
-      hist(x, breaks = bins, col = &#39;darkgray&#39;, border = &#39;white&#39;)
-   })
-}
-
-# Run the application 
-shinyApp(ui = ui, server = server)</code></pre>
-<div style="width: 100% ; height: 400px ; text-align: center; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;" class="muted well">Shiny applications not supported in static R Markdown documents</div>
+<p>Mi nombre es Brahian Cano Urrego, soy Estudiante de Estadistica de la universidad Nacional de colombia, estoy cursando el octavo semestre de mi carrera. Soy Apasionado por los deportes de fuerza, en especial el powerlifting; otra de mis pasiones son las aventuras, disfruto mucho el poder experimentar lo que la naturaleza tiene para darnos.</p>
+<p><img src="IMG2.jpg" width="400px" style="display: block; margin: auto;" /></p>
 
 
 
