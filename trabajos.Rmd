@@ -1,9 +1,15 @@
 ---
 title: "Trabajos"
-
+runtime: shiny
 ---
 
 Aqui colgare un par de trabajos realizados en el transcurso de mi carrera
+
+#aplicación sobre Densidad de una Beta
+
+```{r, echo=FALSE}
+knitr::include_app("https://bencuben.shinyapps.io/my-app/",height = "600px")
+```
 
 #poster sobre aplicaciones en GAMLSS
 
