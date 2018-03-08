@@ -13,7 +13,11 @@ knitr::include_app("https://bencuben.shinyapps.io/my-app/",height = "800px")
 
 #Poster sobre aplicaciones en GAMLSS
 
-Para esto deben dar cick en ventana emergente y buscar el boton de "abrir original"(no es virus).
+Para visualizar el poster click [Aqui](https://github.com/bencuben/bencuben.github.io/blob/master/poster.pdf) (no es virus).
 
 
-<iframe src="http://docs.google.com/gview?url=https://github.com/bencuben/bencuben.github.io/blob/master/poster.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+```{r,echo=F,eval=F}
+#codigo que no funciono
+#<iframe src="http://docs.google.com/gview?url=https://github.com/bencuben/bencuben.github.io/blob/master/poster.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+```
+

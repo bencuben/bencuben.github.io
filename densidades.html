@@ -11,7 +11,7 @@
 
 
 
-<title>Como crear una densidad con R</title>
+<title>Tutoriales de R</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -198,18 +198,49 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Como crear una densidad con R</h1>
+<h1 class="title toc-ignore">Tutoriales de R</h1>
 
 </div>
 
 
+<div id="incrusta-aplicaciones-shiny-en-tu-pagina-web." class="section level1">
+<h1><em>Incrusta Aplicaciones shiny en tu pagina web.</em></h1>
+<p>En esta seccion hablaremos de como se puede incrustar una aplicacion shiny en tu pagina web en los siguientes pasos:</p>
+<div id="primer-paso" class="section level2">
+<h2><em>primer paso</em></h2>
+<p>Primeramente debemos de tener una cuenta en <a href="https://www.shinyapps.io/">Shiny_apps</a>, la cual nos permitira hospedar nuestra aplicación en la red; esta pagina te permite tener hasta 5 apps subidas, pero tienen un limite de uso de 12 horas por mes, asi que debes de tener en cuenta eso al momento de presentar tu pagina.</p>
+<p>Luego de haber creado tu cuenta, leeras la bienvenida que te dara la pagina junto a un instructivo para subir las aplicaciones el cual te pedira que instales un paquete en el R ,<code>rsconnect()</code> el cual hara el vinculo entre tu cuenta y tu pc.</p>
+<p>Luego de eso solo debes desarrollar la aplicación que deseas subir y pulsar el en botón azul <code>publish</code> que estara en la esquina superior derecha de tu script, lo cual publicara luego de unos pasos la aplicacion en tu cuenta shiny.</p>
+</div>
+<div id="segundo-paso" class="section level2">
+<h2><em>Segundo paso</em></h2>
+<p>Ya que tu app se encuentra en la red, crearemos un documento interactivo.</p>
+<p>Crea un documento R markdowm desde tu consola y en el script debes poner debajo del titulo una linea que contenga: <code>runtime: shiny</code>, exactamente asi (tener cuidado con el espaciado).</p>
+<p><img src="Shiny_1.PNG" width="800px" height="200px" /></p>
+<p>Luego solo debes insertar un chunk que contenga la función <code>knitr::include_app()</code> y la url de la aplicacion dentro del documento.</p>
+<div class="figure">
+<img src="Shiny_2.PNG" alt="Ejemplo ilustrado" width="800px" height="200px" />
+<p class="caption">
+Ejemplo ilustrado
+</p>
+</div>
+<p><strong>Nota:</strong> Para no tener inconvenientes recuerda cuando corras el documento con el boton <code>knit</code> ,luego la ventana emergente la abras en el buscador.</p>
+</div>
+<div id="referencias" class="section level2">
+<h2>referencias</h2>
+<p><a href="https://rmarkdown.rstudio.com/authoring_shiny.html#overview">documento interactivos</a></p>
+<p><a href="https://stackoverflow.com/questions/45149770/how-to-embed-a-shiny-application-into-an-rmarkdown-html-document">Como incrustar apps</a></p>
+</div>
+</div>
+<div id="graficando-una-funcion-de-masadensidad-de-probabilidad" class="section level1">
+<h1><em>Graficando una función de masa/densidad de probabilidad</em></h1>
 <p>En este apartado veremos como crear una grafica de densidad de una variable continua, en el software R, para esto tomaremos como ejemplo una variable normal; recuerde, si <span class="math inline">\(x\sim n(\mu,\sigma^2)\)</span> luego su f.d.p esta dada por: <span class="math display">\[f.d.p(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}; -\propto&lt;x&lt;\propto \]</span> Esto no tenemos que programarlo, en r existen varias manera de poder usar su f.d.p, como la función <code>pnorm()</code> para calcular una probabilidad.</p>
-<div id="graficando-la-curva" class="section level1">
-<h1>graficando la curva</h1>
+<div id="graficando-la-curva" class="section level2">
+<h2>graficando la curva</h2>
 <p>Para esto usaremos la función <code>curve()</code> de la siguiente manera que recibe la funcion que queremos dibujar y luego el dominio en que queremos hacerlo.</p>
 <pre class="r"><code>#distribución normal con media = 0 y desviacion estandar = 1
 curve(dnorm(x),from=-5,to =5)</code></pre>
-<p><img src="densidades_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="densidades_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>Podemos refinar un poco el grafico de esta manera:</p>
 <pre class="r"><code>#distribución normal con media m y desviacion estandar sd(se pueden reemplazar los valores)
 
@@ -219,7 +250,7 @@ sd &lt;- 2
 
 curve(dnorm(x,mean= m , sd = sd),from = m-4*sd, to= m+4*sd,
       main=&quot;Distribución normal&quot;)</code></pre>
-<p><img src="densidades_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="densidades_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>por ultimo cambiemos las etiquetas de los ejes y demosle un nombre apropiado</p>
 <pre class="r"><code>m &lt;- 10
 sd &lt;- 5
@@ -227,7 +258,8 @@ sd &lt;- 5
 curve(dnorm(x,mean= m , sd = sd),from = m-4*sd, to= m+4*sd,
       main=paste(&quot;Distribucion normal(&quot;,m,&quot;,&quot;,sd,&quot;)&quot;  ),
       ylab=&quot;Probabilidad&quot;,col=&quot;red&quot;,lwd=3 )</code></pre>
-<p><img src="densidades_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="densidades_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
 </div>
 
 
