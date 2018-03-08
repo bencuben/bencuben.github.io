@@ -1,5 +1,5 @@
 ---
-title: "Tutoriales de R"
+title: ""
 ---
 #*Incrusta Aplicaciones shiny en tu pagina web.*
 

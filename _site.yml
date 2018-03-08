@@ -7,7 +7,7 @@ navbar:
     href: index.html
   - text: "Trabajos"
     href: trabajos.html
-  - text: "Densidades"
+  - text: "Tutoriales"
     href: densidades.html
 output:
   html_document:

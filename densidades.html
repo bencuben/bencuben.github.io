@@ -11,7 +11,7 @@
 
 
 
-<title>Tutoriales de R</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -184,7 +184,7 @@ $(document).ready(function () {
   <a href="trabajos.html">Trabajos</a>
 </li>
 <li>
-  <a href="densidades.html">Densidades</a>
+  <a href="densidades.html">Tutoriales</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -198,7 +198,6 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Tutoriales de R</h1>
 
 </div>
 
@@ -227,7 +226,7 @@ Ejemplo ilustrado
 <p><strong>Nota:</strong> Para no tener inconvenientes recuerda cuando corras el documento con el boton <code>knit</code> ,luego la ventana emergente la abras en el buscador.</p>
 </div>
 <div id="referencias" class="section level2">
-<h2>referencias</h2>
+<h2><em>referencias</em></h2>
 <p><a href="https://rmarkdown.rstudio.com/authoring_shiny.html#overview">documento interactivos</a></p>
 <p><a href="https://stackoverflow.com/questions/45149770/how-to-embed-a-shiny-application-into-an-rmarkdown-html-document">Como incrustar apps</a></p>
 </div>
@@ -236,7 +235,7 @@ Ejemplo ilustrado
 <h1><em>Graficando una función de masa/densidad de probabilidad</em></h1>
 <p>En este apartado veremos como crear una grafica de densidad de una variable continua, en el software R, para esto tomaremos como ejemplo una variable normal; recuerde, si <span class="math inline">\(x\sim n(\mu,\sigma^2)\)</span> luego su f.d.p esta dada por: <span class="math display">\[f.d.p(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}; -\propto&lt;x&lt;\propto \]</span> Esto no tenemos que programarlo, en r existen varias manera de poder usar su f.d.p, como la función <code>pnorm()</code> para calcular una probabilidad.</p>
 <div id="graficando-la-curva" class="section level2">
-<h2>graficando la curva</h2>
+<h2><em>graficando la curva</em></h2>
 <p>Para esto usaremos la función <code>curve()</code> de la siguiente manera que recibe la funcion que queremos dibujar y luego el dominio en que queremos hacerlo.</p>
 <pre class="r"><code>#distribución normal con media = 0 y desviacion estandar = 1
 curve(dnorm(x),from=-5,to =5)</code></pre>
