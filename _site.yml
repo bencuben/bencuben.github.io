@@ -1,17 +1,24 @@
 name: Mi sitio
 output_dir: .
 navbar:
-  title: "Opciones"
+  title: "Bienvenido"
   left:
   - text: "Sobre mi"
+    icon: fa-info-circle
     href: index.html
   - text: "Trabajos"
+    icon: fa-desktop
     href: trabajos.html
   - text: "Tutoriales"
+    icon: fa-file
     href: densidades.html
+  right:
+  - text: "Github"
+    icon: fa-github
+    href: https://github.com/bencuben 
 output:
   html_document:
-    theme: spacelab
+    theme: cerulean
     highlight: textmate
     
 

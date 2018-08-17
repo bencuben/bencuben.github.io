@@ -2,7 +2,7 @@
 title: Un poco sobre mi
 ---
 
-Mi nombre es Brahian Cano Urrego, soy Estudiante de Estadistica de la universidad Nacional de colombia, estoy cursando el octavo semestre de mi carrera.
+Mi nombre es Brahian Cano Urrego, soy estudiante de Estadistica de la universidad Nacional de Colombia, estoy cursando el noveno semestre de Estadística, esta a su vez se podría definir como la ciencia que trata de dar información y tomar ideas a partir de **datos**.
 Soy Apasionado por los deportes de fuerza, en especial el powerlifting; otra de mis pasiones son las aventuras, disfruto mucho el poder experimentar lo que la naturaleza tiene para darnos.
 
 

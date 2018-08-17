@@ -64,7 +64,7 @@ sd <- 2
 # el dominio esta a 4 desviaciones de la media ya que casi todas las observaciones estaran allí
 
 curve(dnorm(x,mean= m , sd = sd),from = m-4*sd, to= m+4*sd,
-      main="Distribución normal")
+      main="Distribucion normal")
 ```
 
 por ultimo cambiemos las etiquetas de los ejes y demosle un nombre apropiado

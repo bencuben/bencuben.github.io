@@ -5,19 +5,23 @@ runtime: shiny
 
 En este espacio colgare un par de trabajos realizados en el transcurso de mi carrera :
 
+#Simposio Internacional de estadística
+
+El 27 de julio de 2018, presente un trabajo en Bucaramanga al Simposio Internacional de Estadística en modalidad de póster.  
+El póster se puede visualizar   [Aqui](https://github.com/bencuben/Certificaciones-y-archivos/blob/master/postermodificado.pdf).  
+La certificación de participación disponible [Aqui](https://github.com/bencuben/Certificaciones-y-archivos/blob/master/certificado%20ponente.pdf)
+
+
+#Realizacion Curso SAS
+
+Debido a que SAS es otra de las muchas herramientas útiles en la estadística, decidí participar en un curso virtual llamado  *SAS Enterprise Guide: Querying and Reporting*.  
+La certificación de participación disponible aquí [Aqui](https://github.com/bencuben/Certificaciones-y-archivos/blob/master/certificado%20SAS.pdf)
+
 #Aplicación sobre Densidad de una Beta
 
+Este es un ejemplo gráfico de lo relacionado a la pestaña tutoriales, en cual se aprende a incrustar un *shiny* app en tu pagina web.
+Este es el resultado
+
 ```{r, echo=FALSE}
-knitr::include_app("https://bencuben.shinyapps.io/my-app/",height = "800px")
+knitr::include_app("https://bencuben.shinyapps.io/my-app/",height = "500px")
 ```
-
-#Poster sobre aplicaciones en GAMLSS
-
-Para visualizar el poster click [Aqui](https://github.com/bencuben/bencuben.github.io/blob/master/poster.pdf) (no es virus).
-
-
-```{r,echo=F,eval=F}
-#codigo que no funciono
-#<iframe src="http://docs.google.com/gview?url=https://github.com/bencuben/bencuben.github.io/blob/master/poster.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
-```
-
