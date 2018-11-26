@@ -1,9 +1,0 @@
----
-title: Un poco sobre mi
----
-Mi nombre es Brahian Cano Urrego, soy estudiante de Estadística de la universidad Nacional de Colombia, actualmente estoy cursando el noveno semestre de mi carrera.
-Mis enfoques profesionales van dirigidos al hacia el analisis de regresión, machine learning, deep learning, y desarrollo de herramientas web en Shiny, en mi vida personal soy Apasionado por los deportes de fuerza, en especial el powerlifting, otra de mis pasiones son las aventuras, disfruto mucho el poder experimentar lo que la naturaleza tiene para darnos.
-
-```{r, out.width = "400px",  fig.align='center',echo=F}
-
-knitr::include_graphics("IMG2.jpg")
