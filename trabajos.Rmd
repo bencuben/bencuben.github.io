@@ -3,14 +3,20 @@ title: "Trabajos"
 runtime: shiny
 ---
 
-En este espacio colgare un par de trabajos realizados en el transcurso de mi carrera :
+Mi nombre es Brahian y en este espacio mostraré algunos logros alcanzados durante mi carrera:
 
 #Simposio Internacional de estadística
 
-El 27 de julio de 2018, presente un trabajo en Bucaramanga al Simposio Internacional de Estadística en modalidad de póster.  
+El día 27 de julio de 2018, presenté un proyecto al Simposio Internacional de Estadística en modalidad de póster, esté tuvo lugar en la ciudad de Bucaramanga.  
 El póster se puede visualizar   [Aqui](https://github.com/bencuben/Certificaciones-y-archivos/blob/master/postermodificado.pdf).  
 La certificación de participación disponible [Aqui](https://github.com/bencuben/Certificaciones-y-archivos/blob/master/certificado%20ponente.pdf)
 
+#Segundo Congreso Nacional de Estadística
+
+El día 8 de noviembre de 2018, presenté un proyecto al segundo Congreso Nacional de Estadística en modalidad de póster, esté tuvo lugar en la ciudad de Cali. 
+
+El póster se puede visualizar   [Aqui](https://github.com/bencuben/Certificaciones-y-archivos/blob/master/poster_congreso_Shiny.pdf).  
+La certificación de participación disponible [Aqui](https://github.com/bencuben/Certificaciones-y-archivos/blob/master/Certificado_ponente.pdf)
 
 #Realizacion Curso SAS
 
@@ -19,9 +25,9 @@ La certificación de participación disponible aquí [Aqui](https://github.com/b
 
 #Aplicación sobre Densidad de una Beta
 
-Este es un ejemplo gráfico de lo relacionado a la pestaña tutoriales, en cual se aprende a incrustar un *shiny* app en tu pagina web.
+Este es un ejemplo gráfico de lo relacionado a la sección tutoriales, en cual se aprende a incrustar un *shiny* app en tu pagina web.
 Este es el resultado
 
 ```{r, echo=FALSE}
-knitr::include_app("https://bencuben.shinyapps.io/my-app/",height = "500px")
+knitr::include_app("https://bencuben.shinyapps.io/my-app/",height = "750px")
 ```

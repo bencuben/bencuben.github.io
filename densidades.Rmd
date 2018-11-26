@@ -20,13 +20,13 @@ Ya que tu app se encuentra en la red, crearemos un documento interactivo.
 Crea un documento R markdowm desde tu consola y en el script debes poner debajo del titulo una linea que contenga: `runtime: shiny`, exactamente asi (tener cuidado con el espaciado).\vspace*{0.6cm}
 
 ```{r out.width = "800px",out.height = "200px",echo=F}
-knitr::include_graphics("Shiny_1.png")
+knitr::include_graphics("Shiny_1.PNG")
 ```
 
 Luego solo debes insertar un chunk que contenga la función `knitr::include_app()` y la url de la aplicacion dentro del documento.\vspace*{0.6cm}
 
 ```{r out.width = "800px",out.height = "200px",echo=F,fig.cap="Ejemplo ilustrado"}
-knitr::include_graphics("Shiny_2.png")
+knitr::include_graphics("Shiny_2.PNG")
 ```
 
 **Nota:** Para no tener inconvenientes recuerda cuando corras el documento con el boton `knit` ,luego la ventana emergente la abras en el buscador.

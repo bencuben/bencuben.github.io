@@ -20,26 +20,54 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
 
 <style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+</style>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
   }
 </style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
-
 
 
 <style type="text/css">
@@ -90,6 +118,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -256,26 +287,26 @@ Ejemplo ilustrado
 <div id="graficando-la-curva" class="section level2">
 <h2><em>graficando la curva</em></h2>
 <p>Para esto usaremos la función <code>curve()</code> de la siguiente manera que recibe la funcion que queremos dibujar y luego el dominio en que queremos hacerlo.</p>
-<pre class="r"><code>#distribución normal con media = 0 y desviacion estandar = 1
-curve(dnorm(x),from=-5,to =5)</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#distribución normal con media = 0 y desviacion estandar = 1</span>
+<span class="kw">curve</span>(<span class="kw">dnorm</span>(x),<span class="dt">from=</span><span class="op">-</span><span class="dv">5</span>,<span class="dt">to =</span><span class="dv">5</span>)</code></pre></div>
 <p><img src="densidades_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>Podemos refinar un poco el grafico de esta manera:</p>
-<pre class="r"><code>#distribución normal con media m y desviacion estandar sd(se pueden reemplazar los valores)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#distribución normal con media m y desviacion estandar sd(se pueden reemplazar los valores)</span>
 
-m&lt;- 5
-sd &lt;- 2
-# el dominio esta a 4 desviaciones de la media ya que casi todas las observaciones estaran allí
+m&lt;-<span class="st"> </span><span class="dv">5</span>
+sd &lt;-<span class="st"> </span><span class="dv">2</span>
+<span class="co"># el dominio esta a 4 desviaciones de la media ya que casi todas las observaciones estaran allí</span>
 
-curve(dnorm(x,mean= m , sd = sd),from = m-4*sd, to= m+4*sd,
-      main=&quot;Distribucion normal&quot;)</code></pre>
+<span class="kw">curve</span>(<span class="kw">dnorm</span>(x,<span class="dt">mean=</span> m , <span class="dt">sd =</span> sd),<span class="dt">from =</span> m<span class="op">-</span><span class="dv">4</span><span class="op">*</span>sd, <span class="dt">to=</span> m<span class="op">+</span><span class="dv">4</span><span class="op">*</span>sd,
+      <span class="dt">main=</span><span class="st">&quot;Distribucion normal&quot;</span>)</code></pre></div>
 <p><img src="densidades_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>por ultimo cambiemos las etiquetas de los ejes y demosle un nombre apropiado</p>
-<pre class="r"><code>m &lt;- 10
-sd &lt;- 5
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">m &lt;-<span class="st"> </span><span class="dv">10</span>
+sd &lt;-<span class="st"> </span><span class="dv">5</span>
 
-curve(dnorm(x,mean= m , sd = sd),from = m-4*sd, to= m+4*sd,
-      main=paste(&quot;Distribucion normal(&quot;,m,&quot;,&quot;,sd,&quot;)&quot;  ),
-      ylab=&quot;Probabilidad&quot;,col=&quot;red&quot;,lwd=3 )</code></pre>
+<span class="kw">curve</span>(<span class="kw">dnorm</span>(x,<span class="dt">mean=</span> m , <span class="dt">sd =</span> sd),<span class="dt">from =</span> m<span class="op">-</span><span class="dv">4</span><span class="op">*</span>sd, <span class="dt">to=</span> m<span class="op">+</span><span class="dv">4</span><span class="op">*</span>sd,
+      <span class="dt">main=</span><span class="kw">paste</span>(<span class="st">&quot;Distribucion normal(&quot;</span>,m,<span class="st">&quot;,&quot;</span>,sd,<span class="st">&quot;)&quot;</span>  ),
+      <span class="dt">ylab=</span><span class="st">&quot;Probabilidad&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lwd=</span><span class="dv">3</span> )</code></pre></div>
 <p><img src="densidades_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 </div>
 </div>

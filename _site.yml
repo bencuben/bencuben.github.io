@@ -1,5 +1,5 @@
-name: Mi sitio
-output_dir: .
+name: Brahia-website
+output_dir: '.'
 navbar:
   title: "Bienvenido"
   left:
@@ -19,6 +19,8 @@ navbar:
 output:
   html_document:
     theme: cerulean
-    highlight: textmate
+    highlight: tango
+    lib_dir: site_libs
+self_contained: yes
     
 
